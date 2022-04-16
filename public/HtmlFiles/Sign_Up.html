@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <title>Sign Up</title>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <link href="/Css/style.css" rel="stylesheet" type="text/css" />
+     <link rel="shortcut icon" type="image/png" href="/CardImages/friendzone_logo.png">
+    <script src="/JavaScript/script.js"></script> 
+    <link href="/Css/signUp.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1>Sign Up!</h1>
+    </header>
+    
+  <main>
+    <div class="container-a">
+      <form id="Form" onsubmit="event.preventDefault(); signdata(event)">
+        <label>Email Address
+          <br>
+          <input type="email" id="email" value="example@gmail.com" required/>
+        </label>
+        <br>
+        <label>Password
+        <br>
+          <input type="password" id="password"  required/>
+        </label>
+        <br>
+        <label>Username
+        <br>
+          <input type="text" id="username"  required/>
+        </label>
+        <br>
+        <input type="submit"  value="Next Page">
+<!--         event.preventDefault(); -->
+      </form>
+      <br>
+      
+    </div>
+    <br>
+    <section>
+      <div class="container">
+        <br>
+        <p1>Already have an Account?</p1>
+        <br>
+        <a href="index.html" <p>Login</p></a>
+        <br>
+      </div>
+      </section>
+
+  
+  
+   </main>
+  </body>
+
+</html>

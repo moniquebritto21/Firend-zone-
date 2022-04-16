@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profile Page</title>
+    <link rel="shortcut icon" type="image/png" href="/CardImages/friendzone_logo.png">
+    <link href="/Css/profilepg.css" rel="stylesheet" type="text/css" />
+<!--     <link href="/Css/materialize.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+   <style>
+       
+
+        body {
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
+            
+        } 
+
+        .card {
+            padding: 0;
+            margin: 15px 10px;  
+            border-radius: var(--card_border_radius);
+            background-color:grey;
+        }
+
+        .card_small {
+            grid-row-end: span var(--card_small);
+        }
+
+        .card_medium {
+            grid-row-end: span var(--card_medium);
+        }
+
+        .card_large {
+            grid-row-end: span var(--card_large);
+        }
+
+        :root {
+            --card_width: 250px;
+            --row_increment: 10px;
+            --card_border_radius: 16px;
+            --card_small: 26;
+            --card_medium: 33;
+            --card_large: 45;
+        }
+
+.pin_container {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            justify-content: center;
+
+            background-color: black;
+        }
+ img {
+    border-radius: var(--card_border_radius);
+        height: 100%;
+}
+
+    </style>
+    </head>
+
+
+
+<body>
+
+  <nav>
+
+        <a href="Home.html">Home</a>
+        <a href="Chat.html">Chat</a>
+        <a href="Profile.html">Profile</a>
+        <a href="explore.html">Explore</a>
+      </nav>
+       
+
+    <header> 
+      <div class="container">
+
+        <div class="pinfo">
+
+
+           <div id="pfp">
+           
+          <img src="/Profile/pfp.jpg" >
+           
+          </div>
+      
+      <br>
+      
+    <div class="uinfo">
+      
+      <p1>Mavka</p1>
+      
+      <br>
+      
+      <p2>I love cheese</p2>
+      
+    </div>
+
+    <br>
+      
+      <p3><button >Edit Profile</button></p3>
+      
+      
+     <button>
+       <i class="material-icons">
+         <span class="material-icons-outlined">settings</span>
+     </i></button>
+    </div>
+
+<!--   not in the wire frame but i think we need to keep the nav at the top cause the user will have no way of going back home we could have a back buttton -->
+      
+    </header>
+
+  <main>
+    
+    <div class="list">
+      <ul class="tabs">
+
+        <button><li >Posts</li></button>
+        <button><li>Friends</li></button>
+        <button><li>Groups</li></button>
+      </ul>
+    </div>
+  </main>
+       
+
+
+<br>
+  
+
+    <div class="pin_container">
+        <div class="card card_small"><img src= "/ProfileImages/Person1.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person11.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_large"><img src= "/ProfileImages/Person4.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person15.jpg " alt="Person15" style="width:100%"></div>
+        <div class="card card_small"><img src= "/ProfileImages/Person5.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_large"><img src= "/ProfileImages/Person13.jpg " algt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person9.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_small"><img src= "/ProfileImages/Person6.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person3.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_small"><img src= "/ProfileImages/Person2.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person16.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_large"><img src= "/ProfileImages/Person14.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person7.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_small"><img src= "/ProfileImages/Person10.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_medium"><img src= "/ProfileImages/Person8.jpg " alt="Profile pic" style="width:100%"></div>
+        <div class="card card_large"><img src= "/ProfileImages/Person12.jpg " alt="Profile pic" style="width:100%"></div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+  
+</html>

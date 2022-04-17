@@ -23,7 +23,7 @@
     
   <main>
     <div class="container-a">
-      <form id="Form" onsubmit="signdata()">
+      <form id="Form" >
         <label>Email Address
           <br>
           <input type="email" id="email" value="example@gmail.com" required/>
@@ -39,16 +39,20 @@
           <input type="text" id="username"  required/>
         </label>
         <br>
-        <input type="submit"  value="Next Page">
+        
+        <input type="submit" id="submit" value="Next Page">
 
       </form>
       
   <script type="module"> 
 
-        console.log("hello");
-  // Import the functions you need from the SDKs you need
+
+
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+        console.log("hello");
+  // Import the functions you need from the SDKs you need
+ 
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -70,35 +74,38 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 
-  import {getDatabase, ref, set, child, update, remove}
-  from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+  import {getDatabase, ref, set, child, update, remove}  from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
 
   const db= getDatabase();
 
   // refrences
-
+    var unique=1101;
     var emailbox= document.getElementById("email").value;
     var usernamebox= document.getElementById("username").value;
     var passwordbox= document.getElementById("password").value;
 
     function InsertData(){
 
-        set(ref (db,"Users/"),{
+        set(ref (db,"Users/"+unique),{
+
             Email: emailbox.value,
             Passowrd: passwordbox.value,
             Username: usernamebox.value,
 
 
-        })
+        });
           .then(()=>{
 alert("data stored successfully");
                     })
 .catch((error)=>{
-        alert("unsuccessful, error");
+        alert("unsuccessful, error"+error);
             });
             
     }
-      </script>
+
+    </script>
+
+
 
       <br>
       

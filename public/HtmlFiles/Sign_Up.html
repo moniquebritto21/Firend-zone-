@@ -8,7 +8,7 @@
     
     <link href="/Css/style.css" rel="stylesheet" type="text/css" />
      <link rel="shortcut icon" type="image/png" href="/CardImages/friendzone_logo.png">
-    <script src="/JavaScript/script.js"></script> 
+    <!-- <script src="/JavaScript/script.js"></script>  -->
     <link href="/Css/signUp.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
@@ -23,7 +23,7 @@
     
   <main>
     <div class="container-a">
-      <form id="Form" onsubmit="event.preventDefault(); signdata(event)">
+      <form id="Form" onsubmit="signdata()">
         <label>Email Address
           <br>
           <input type="email" id="email" value="example@gmail.com" required/>
@@ -40,8 +40,66 @@
         </label>
         <br>
         <input type="submit"  value="Next Page">
-<!--         event.preventDefault(); -->
+
       </form>
+      
+  <script type="module"> 
+
+        console.log("hello");
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDFe4p6hc8OIwyFHka5--hxZi93hHSrBrI",
+    authDomain: "friend-zone-c534f.firebaseapp.com",
+    databaseURL: "https://friend-zone-c534f-default-rtdb.firebaseio.com",
+    projectId: "friend-zone-c534f",
+    storageBucket: "friend-zone-c534f.appspot.com",
+    messagingSenderId: "617008963286",
+    appId: "1:617008963286:web:5ff1b5dd5c9a2041dcb377",
+    measurementId: "G-EN149SRLFD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  import {getDatabase, ref, set, child, update, remove}
+  from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+
+  const db= getDatabase();
+
+  // refrences
+
+    var emailbox= document.getElementById("email").value;
+    var usernamebox= document.getElementById("username").value;
+    var passwordbox= document.getElementById("password").value;
+
+    function InsertData(){
+
+        set(ref (db,"Users/"),{
+            Email: emailbox.value,
+            Passowrd: passwordbox.value,
+            Username: usernamebox.value,
+
+
+        })
+          .then(()=>{
+alert("data stored successfully");
+                    })
+.catch((error)=>{
+        alert("unsuccessful, error");
+            });
+            
+    }
+      </script>
+
       <br>
       
     </div>
@@ -51,11 +109,13 @@
         <br>
         <p1>Already have an Account?</p1>
         <br>
-        <a href="index.html" <p>Login</p></a>
+        <a href="index.html"> <p>Login</p></a>
+
         <br>
       </div>
       </section>
 
+    
   
   
    </main>

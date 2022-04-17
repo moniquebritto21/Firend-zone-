@@ -1,0 +1,33 @@
+.container-a{
+  padding:40px;
+  margin:0px 50px 50px 50px;
+  border:1px solid;
+  box-shadow: 5px 10px #888888;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap:1em;
+  
+}
+
+
+label{
+  font-weight:bold;
+  font-size:16px;
+}
+h1{
+  text-align:center;
+  color:white;
+  text-shadow: 2px 2px black;
+  background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF416C,#F297A6);
+	background: linear-gradient(to right, #FF4B2B, #FF416C, #F8E71C);
+  padding:20px
+}
+header{
+  margin:0px 50px 50px 50px;
+}

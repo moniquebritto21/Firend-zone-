@@ -1,0 +1,37 @@
+#status {
+    color:black;
+}
+.container .card-content img{
+  object-position:center;
+  padding:10px;
+  
+  
+}
+.container{
+  justify-content:center;
+}
+.container .card-content img:hover{
+    cursor:pointer;
+    opacity:0.5;
+
+}
+h1{
+ text-align:center;
+  color:white;
+  text-shadow: 2px 2px black;
+  background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF416C,#F297A6);
+	background: linear-gradient(to right, #FF4B2B, #FF416C, #F8E71C);
+  margin:30px 50px 50px 50px;
+  padding:20px
+}
+
+.parag-style{
+  font-weight:bold;
+  font-size:16px;
+  margin:30px;
+}
+
+.Next{
+  justify-content:right;
+}

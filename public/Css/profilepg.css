@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+header {
+
+  width:90%;
+      
+  transform: translate(6.5%, 10%);
+  height:190px;
+  border: 1px solid;
+  display:flex; 
+}
+
+header .container{
+    left:-100;
+
+  
+}
+nav{
+ 
+  word-spacing:50px; 
+  position:relative;
+  white-space: nowrap;
+  border-style:solid;
+  text-indent: 20px;
+  text-align:center;
+}
+
+*{
+
+
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+
+body{
+
+  background:salmon;
+  overflow-x:hidden;
+  padding-top:90px;
+  font-family:"poppins","sans-serif";
+  margin:0 100px;
+
+  
+}
+
+.container .pinfo #pfp{
+    float:left;
+  width:200px;
+  height:200px;
+ 
+  
+}
+.container .pinfo #pfp img{
+  margin-left:-70px;
+  bottom: -200px;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  display:flex;
+  transform: translateY(20%);
+/*   height:50px;  saving for later maybe*/
+  border: 4px dotted;
+
+}
+
+
+
+
+header .container .pinfo p3{
+    border-radius:50%;
+
+    
+}
+
+.list {
+   
+  transform: translate(20%, 10%);
+  display: flex;
+  display:inline-block;
+  text-spacing:12px;
+
+  
+}
+
+
+/* 
+.list .tabs tabs-transparent{
+  width:200px;
+   transform: translate(0, 20%);
+  height:20px;
+  display:inline-block;
+  margin-right:4px;
+ 
+} */
+
+
+
+
+
+
+
+
+
